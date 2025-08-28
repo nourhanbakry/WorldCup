@@ -1,94 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.MainActivity"
     android:layout_gravity="center"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
     <TextView
-        android:layout_margin="40dp"
-        android:layout_gravity="center"
         style="@style/textLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="World Cup Results"/>
-    <TextView
-        android:layout_margin="50dp"
         android:layout_gravity="center"
+        android:layout_margin="40dp"
+        android:text="World Cup Results" />
+
+    <TextView
         android:id="@+id/year"
-        style="@style/textSmall"
+        style="@style/textLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2010"/>
+        android:layout_gravity="center"
+        android:layout_margin="50dp"
+        android:text="2010" />
+
     <LinearLayout
-        android:gravity="center"
-        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <TextView
-            android:id="@+id/team1"
-            style="@style/textMedium"
+            android:id="@+id/homeTeam"
+            style="@style/textSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Barzil"/>
+            android:text="Barzil" />
+
         <TextView
+            android:id="@+id/homeTeamGoals"
             style="@style/textSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
-            android:id="@+id/team1Result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1"/>
+            android:text="1" />
+
         <TextView
-            style="@style/textSmall"
             android:id="@+id/delimter"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"/>
-        <TextView
             style="@style/textSmall"
-            android:layout_marginHorizontal="40dp"
-            android:id="@+id/team2Result"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1"/>
+            android:text="-" />
+
         <TextView
-            android:id="@+id/team2"
-            style="@style/textMedium"
+            android:id="@+id/awayTeamGoals"
+            style="@style/textSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Germany"/>
+            android:layout_marginHorizontal="40dp"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/awayTeam"
+            style="@style/textSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Germany" />
     </LinearLayout>
+
     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginVertical="20dp"
         android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="horizontal">
+
         <ImageView
-            android:paddingHorizontal="20dp"
-            android:layout_gravity="center"
             android:id="@+id/prevoius"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/prevoius_icon"/>
+            android:layout_gravity="center"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/prevoius_icon" />
+
         <TextView
             android:id="@+id/stadium"
-            android:layout_margin="20dp"
-            android:layout_gravity="center"
-            style="@style/textSmall"
+            style="@style/textLarge"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Stuidim"/>
-        <ImageView
-            android:paddingHorizontal="20dp"
             android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="Stuidim" />
+
+        <ImageView
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/next_icon"/>
+            android:layout_gravity="center"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/next_icon" />
 
     </LinearLayout>
 
